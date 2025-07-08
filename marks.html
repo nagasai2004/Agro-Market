@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Page</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Enter Your Marks</h1>
+        
+        <!-- Marks Form -->
+        <form action="marks.php" method="POST">
+            <label for="tenth_score">10th Score (if applicable):</label>
+            <input type="text" id="tenth_score" name="tenth_score" placeholder="Enter 10th score"><br><br>
+
+            <label for="inter_poly_score">Inter/Polytechnic Score:</label>
+            <input type="text" id="inter_poly_score" name="inter_poly_score" placeholder="Enter Inter/Polytechnic score"><br><br>
+
+            <label for="btech_percentage">B.Tech Percentage:</label>
+            <input type="text" id="btech_percentage" name="btech_percentage" placeholder="Enter B.Tech percentage"><br><br>
+
+            <!-- Update Button -->
+            <input type="submit" name="update" value="Update" class="button">
+        </form>
+        
+        <!-- Next Button -->
+        <a href="student.html" class="button next-button">Back</a>
+    </div>
+
+    <!-- PHP Code for MySQL Connection -->
+    
+</body>
+</html>

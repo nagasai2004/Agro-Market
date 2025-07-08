@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="sign-in-box">
+            <h2>Student Sign In</h2>
+            <form id="donor-form">
+                <div class="form-group">
+                    <label for="donor-email">Email:</label>
+                    <input type="email" id="donor-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="donor-password">Password:</label>
+                    <input type="password" id="donor-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Sign In</button>
+                </div>
+            </form>
+        </div>
+        <div class="sign-in-box">
+            <h2>Company Sign In</h2>
+            <form id="org-form">
+                <div class="form-group">
+                    <label for="org-email">Email:</label>
+                    <input type="email" id="org-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="org-password">Password:</label>
+                    <input type="password" id="org-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Sign In</button>
+                </div>
+            </form>
+        </div>
+        <a href="index.html" class="button next-button">Back</a>
+    </div>
+
+    <script>
+        // Handle donor sign-in
+        document.getElementById('donor-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Simulate authentication (you would normally verify the email and password)
+            const donorEmail = document.getElementById('donor-email').value;
+            const donorPassword = document.getElementById('donor-password').value;
+
+            // Simple validation for demonstration
+            if (donorEmail === "student@example.com" && donorPassword === "student1") {
+                window.location.href = "student.html";
+            } else {
+                alert("Invalid student credentials.");
+            }
+        });
+
+        // Handle organization sign-in
+        document.getElementById('org-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Simulate authentication (you would normally verify the email and password)
+            const orgEmail = document.getElementById('org-email').value;
+            const orgPassword = document.getElementById('org-password').value;
+
+            // Simple validation for demonstration
+            if (orgEmail === "company@example.com" && orgPassword === "company1") {
+                window.location.href = "company.html";
+            } else {
+                alert("Invalid company credentials.");
+            }
+        });
+    </script>
+</body>
+</html>

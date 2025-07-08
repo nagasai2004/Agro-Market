@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information</h1>
+        <form action="info.php" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" required>
+            <br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" required>
+            <br><br>
+
+            <label for="college_name">College Name:</label>
+            <input type="text" name="college_name" id="college_name" required>
+            <br><br>
+
+            <label for="student_address">Student Address:</label>
+            <textarea name="student_address" id="student_address" rows="4" required></textarea>
+            <br><br>
+
+            <input type="submit" name="submit" value="Submit">
+            <a href="student.html" class="button">Back</a>
+        </form>
+    </div>
+</body>
+</html>

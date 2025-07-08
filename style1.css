@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('signin.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity for visibility */
+}
+.back-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+/* Container for Sign-In Forms */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Wrpper for Sign-In Boxes */
+.sign-in-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sign-In Box Styling */
+.sign-in-box {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sign-in-box:last-child {
+    border-right: none;
+}
+
+.sign-in-box h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sign-in-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.sign-up-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.sign-up-link a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.sign-up-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sign-in-wrapper {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sign-in-box {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .sign-in-box:last-child {
+        border-bottom: none;
+    }
+}

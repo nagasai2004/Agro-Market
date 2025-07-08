@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internships Upload</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Internship Details</h1>
+        <form action="internships.php" method="POST" enctype="multipart/form-data">
+            <label for="internship_type">Internship Type:</label>
+            <select id="internship_type" name="internship_type" required>
+                <option value="">Select an option</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+                <option value="paid">Paid</option>
+            </select>
+            
+            <label for="certificate">Upload Certificate:</label>
+            <input type="file" id="certificate" name="certificate" accept=".pdf, .jpg, .png" required>
+            
+            <input type="submit" name="submit" value="Submit" class="button">
+            <input type="button" value="Back" class="button" onclick="location.href='student.html';">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Form</title>
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Company Form</h1>
+        <form action="company.php" method="POST">
+            <label for="company_name">Company Name:</label>
+            <input type="text" id="company_name" name="company_name" required>
+
+            <label for="roles">Roles:</label>
+            <input type="text" id="roles" name="roles" required>
+
+            <label for="packages">Packages:</label>
+            <input type="text" id="packages" name="packages" required>
+
+            <label for="eligibility_criteria">Eligibility Criteria:</label>
+            <input type="text" id="eligibility_criteria" name="eligibility_criteria" required>
+
+            <label for="pre_requirements">Pre-requirements:</label>
+            <input type="text" id="pre_requirements" name="pre_requirements" required>
+
+            <input type="submit" name="submit" value="Submit">
+            <a href="company.html" class="button">Back</a>
+        </form>
+    </div>
+</body>
+</html>
