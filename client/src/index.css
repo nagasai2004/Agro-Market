@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --color-primary: #2f7d32;
+  --color-primary-dark: #1e5a22;
+  --color-accent: #8d5b2f;
+  --color-bg: #f5f6ef;
+  --color-surface: #ffffff;
+  --color-muted: #6b7280;
+  --shadow-soft: 0 24px 60px rgba(47, 125, 50, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at top right, rgba(47, 125, 50, 0.1), transparent 28%),
+    linear-gradient(180deg, #fafbf6 0%, #f1f2ea 100%);
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.heading-font {
+  font-family: var(--font-heading);
+}
+
+.surface-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-soft);
+}
+
